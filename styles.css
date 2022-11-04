@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.left-container, .right-container {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.left-content {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.left-header{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 50px;
+    background-color: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-breadcrumb {
+    width: 70%;
+    height: 70%;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-dots {
+    width: 5%;
+    height: 5%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.three-dots {
+    width: 100%;
+    height: 100%;
+}
+
+.breadcrumb {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.left-context {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.title {
+    font-size: 40px;
+}
+.subtitle {
+    font-size: 18px;
+    color: gray;
+}
+
+.search-input {
+    position: relative;
+    padding: 30px 0px ;
+
+}
+.text-input {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    padding-left: 50px;
+    background-color: gray;
+    border: none;
+    color: white;
+}
+
+.text-input::placeholder {
+    color: white;
+}
+
+.search-icon {
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    width: 20px;
+    height: 20px;
+}
+
+.project {
+    padding: 30px 0px;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.project-list {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.project-items {
+    width: 120px;
+    height: 150px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projects {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.items {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    /* background-color: pink; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+}
+
+.two {
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    position: relative;
+}
+
+.two::after {
+    position: absolute;
+    content: "";
+    border: 5px solid rgb(182, 244, 146);
+    border-radius: 20px;
+    /* padding: 50px; */
+    width: 110%;
+    height: 110px;
+}
+
+.three {
+    background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+}
+
+.four {
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+}
+
+.five {
+    background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);
+}
+
+.six {
+    background-color: gray;
+}
+
+.items-text {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.items-sub {
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+
+.right-content {
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 25px;
+}
+
+.right-header {
+    padding: 25px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.right-title {
+    width: 70%;
+}
+
+.right-profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* gap: 10px; */
+    width: 30%;
+}
+
+.add-profile {
+    border: 2px solid #a9a9a9;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-profile {
+    position: relative;
+    display: flex;
+    width: 70%;
+}
+
+.profile-img{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.first {
+    left: 80%;
+    background-color: darkgray;
+}
+
+.second {
+    left: 52%;
+    background-color: gray;
+}
+
+.third {
+    left: 22%;
+    background-color: pink;
+}
+
+.right-context {
+    padding: 10px 50px;
+    width: 100%;
+}
+
+.context-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b1a8a8;
+    padding: 20px 0px;
+}
+
+.list-check {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.checklist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.container-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container-check input:checked ~ .checkmark {
+    background-color: #63CCC5;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.status {
+    width: 120px;
+    height: 25px;
+    border-radius: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.approve {
+    background-color: cyan;
+    color: darkcyan;
+}
+
+.inprogress {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+.review {
+    background-color: orange;
+    color: salmon;
+}
+
+.waiting {
+    background-color: gray;
+    color: darkgray;
+}
+
+.button-plus {
+    width: 100%;
+    padding: 40px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-add {
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: darkviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: darkviolet 0px 5px 10px 0px;
+}
+
+.btn-add:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.icon-plus {
+    color: white;
+    font-size: 22px;
+}
